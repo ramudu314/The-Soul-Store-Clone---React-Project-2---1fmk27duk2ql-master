@@ -1,0 +1,115 @@
+.product-search-container {
+    width: 100%;
+    padding: 16px;
+  }
+  
+  .heading {
+    font-size: 1.25rem;
+    padding-bottom: 8px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 16px;
+  }
+  
+  .loading,
+  .error {
+    text-align: center;
+    margin-top: 16px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    gap: 10px;
+  }
+  
+  .product-item {
+    /* background-color: #f2f2f2; */
+    /* border: 1px solid #ccc; */
+    /* border-radius: 4px; */
+    /* padding: 16px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 390px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3d3c3c;
+    overflow: hidden;
+    margin-bottom: 8px;
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  
+  .image:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-info {
+    text-align: center;
+  }
+  
+  .product-name {
+    font-weight: bold;
+    margin-bottom: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .product-subcategory,
+  .product-price {
+    margin-bottom: 4px;
+  }
+  
+  .loading-placeholder {
+    background-color: #e0e0e0;
+    animation: pulse 1.5s infinite ease-in-out;
+  }
+  
+  .product-image-placeholder {
+    width: 100%;
+    height: 200px;
+    background-color: #ccc;
+    margin-bottom: 8px;
+  }
+  
+  .product-info-placeholder {
+    width: 100%;
+  }
+  
+  .info-placeholder {
+    background-color: #ccc;
+    height: 16px;
+    margin-bottom: 8px;
+  }
+  
+  @keyframes pulse {
+    0% {
+      background-color: #e0e0e0;
+    }
+    50% {
+      background-color: #ccc;
+    }
+    100% {
+      background-color: #e0e0e0;
+    }
+  }
+  
